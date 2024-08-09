@@ -1,4 +1,10 @@
-// Map: colección de pares clave-valor
+/*
+Clase 4 en vídeo | 31/07/2024
+Mapas, bucles y funciones
+https://www.twitch.tv/videos/2212289583?t=00h17m45s
+*/
+
+// Map
 
 // Declaración
 
@@ -6,24 +12,21 @@ let myMap = new Map()
 
 console.log(myMap)
 
-// Inicialización
+// Inicialiación
 
 myMap = new Map([
-  ["name", "Brais"],
-  ["email", "braismoure@mouredev.com"],
-  ["age", 37]
+    ["name", "Brais"],
+    ["email", "braismoure@mouredev.com"],
+    ["age", 37]
 ])
 
 console.log(myMap)
 
-// Metodos y propiedades
+// Métodos y propiedades
 
 // set
 
-myMap.set("alias", "MoureDev")
-
-console.log(myMap)
-
+myMap.set("alias", "mouredev")
 myMap.set("name", "Brais Moure")
 
 console.log(myMap)
@@ -35,8 +38,8 @@ console.log(myMap.get("surname"))
 
 // has
 
-console.log(myMap.has("name"))
 console.log(myMap.has("surname"))
+console.log(myMap.has("age"))
 
 // delete
 
@@ -44,29 +47,18 @@ myMap.delete("email")
 
 console.log(myMap)
 
-// clear  - elimina todos los elementos
+// keys, values y entries
+
+console.log(myMap.keys())
+console.log(myMap.values())
+console.log(myMap.entries())
+
+// size
+
+console.log(myMap.size)
+
+// clear
 
 myMap.clear()
 
 console.log(myMap)
-
-// keys
-myMap = new Map([
-  ["name", "Brais"],
-  ["email", "braismoure@mouredev.com"],
-  ["age", 37]
-])
-
-console.log(myMap.keys())
-
-// values
-
-console.log(myMap.values())
-
-// entries
-
-console.log(myMap.entries())
-
-// size - devuelve la longitud del map
-
-console.log(myMap.size)
