@@ -1,61 +1,71 @@
+/*
+Clase 3 en vídeo | 24/07/2024
+Condicionales, arrays y sets
+https://www.twitch.tv/videos/2206228701?t=00h16m02s
+*/
+
 // if, else if, else
 
 // if (si)
-let age = 90
+
+let age = 37
 
 if (age == 37) {
-  console.log("La edad es 37")
+    console.log("La edad es 37")
 }
 
 // else (si no)
+
 if (age == 37) {
-  console.log("La edad es 37")
+    console.log("La edad es 37")
 } else {
-  console.log("La edad no es 37")
+    console.log("La edad no es 37")
 }
 
 // else if (si no, si)
+
 if (age == 37) {
-  console.log("La edad es 37")
+    console.log("La edad es 37")
 } else if (age < 18) {
-  console.log("Es menor de edad")
+    console.log("Es menor de edad")
 } else {
-  console.log("La edad no es 37 ni es menor de edad")
+    console.log("La edad no es 37 ni es menor de edad")
 }
 
 // Operador ternario
-let message = age == 37 ? "La edad es 37" : "La edad no es 37"
+
+const message = age == 37 ? "La edad es 37" : "La edad no es 37"
 console.log(message)
 
 // switch
-let day = 9
-let dayname
+
+let day = 3
+let dayName
 
 switch (day) {
-  case 0:
-    dayname = "Domingo"
-    break
-  case 1:
-    dayname = "Lunes"
-    break
-  case 2:
-    dayname = "Martes"
-    break
-  case 3:
-    dayname = "Miercoles"
-    break
-  case 4:
-    dayname = "Jueves"
-    break
-  case 5:
-    dayname = "Viernes"
-    break
-  case 6:
-    dayname = "Sabado"
-    break
-
-  default:
-    dayname = "Dia no encontrado. Los valores posibles son: 0, 1, 2, 3, 4, 5, 6"
+    case 0:
+        dayName = "Lunes"
+        break
+    case 1:
+        dayName = "Martes"
+        break
+    case 2:
+        dayName = "Miércoles"
+        break
+    case 3:
+        dayName = "Jueves"
+        break
+    case 4:
+        dayName = "Viernes"
+        break
+    case 5:
+        dayName = "Sábado"
+        break
+    case 6:
+        dayName = "Domingo"
+        break
+    default:
+        dayName = "Número de día incorrecto"
 }
 
-console.log(dayname)
+console.log(dayName)
