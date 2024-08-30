@@ -1,4 +1,10 @@
-//set
+/*
+Clase 3 en vídeo | 24/07/2024
+Condicionales, arrays y sets
+https://www.youtube.com/live/XCNjoIoO3Ws?si=3XCjdZ9r41JID-by&t=978
+*/
+
+// Set
 
 // Declaración
 
@@ -8,27 +14,49 @@ console.log(mySet)
 
 // Inicialización
 
-mySet = new Set(["Brais", "Moure", "MoureDev", 37, true])
+mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
 
 console.log(mySet)
 
-// Metodos comunes
+// Métodos comunes
 
-// add - agrega un elemento
-// delete - elimina un elemento
-// has - comprueba si un elemento existe
-// clear - elimina todos los elementos
+// add y delete
 
-mySet.add("moure.dev")
+mySet.add("https://moure.dev")
 
 console.log(mySet)
 
-mySet.delete("moure.dev")
+mySet.delete("https://moure.dev")
 
 console.log(mySet)
 
-mySet.has("moure.dev")
+console.log(mySet.delete("Brais"))
+console.log(mySet.delete(4))
 
-// size - devuelve la longitud del set
+console.log(mySet)
+
+// has
+
+console.log(mySet.has("Moure"))
+console.log(mySet.has("Brais"))
+
+// size
 
 console.log(mySet.size)
+
+// Convertir un set a array
+let myArray = Array.from(mySet)
+console.log(myArray)
+
+// Convertir un array a set
+
+mySet = new Set(myArray)
+console.log(mySet)
+
+// No admite duplicados
+
+mySet.add("braismoure@mouredev.com")
+mySet.add("braismoure@mouredev.com")
+mySet.add("braismoure@mouredev.com")
+mySet.add("BraisMoure@mouredev.com")
+console.log(mySet)
