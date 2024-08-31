@@ -1,7 +1,7 @@
 /*
 Clase 4 en vídeo | 31/07/2024
 Mapas, bucles y funciones
-https://www.twitch.tv/videos/2212289583?t=00h17m45s
+https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885
 */
 
 // Loops o bucles
@@ -52,20 +52,20 @@ myMap = new Map([
 
 myString = "¡Hola, JavaScript!"
 
-for (let valor of myArray) {
-  console.log(valor)
+for (let value of myArray) {
+  console.log(value)
 }
 
-for (let valor of mySet) {
-  console.log(valor)
+for (let value of mySet) {
+  console.log(value)
 }
 
-for (let valor of myMap) {
-  console.log(valor)
+for (let value of myMap) {
+  console.log(value)
 }
 
-for (let valor of myString) {
-  console.log(valor)
+for (let value of myString) {
+  console.log(value)
 }
 
 // break y continue
